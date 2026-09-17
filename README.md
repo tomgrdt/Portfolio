@@ -57,3 +57,5 @@ Pages/Portfolio.razor   ← contenu du portfolio
 wwwroot/index.html
 wwwroot/css/portfolio.css
 ```
+
+Automatisation faite
