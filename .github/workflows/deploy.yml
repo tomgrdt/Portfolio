@@ -1,0 +1,46 @@
+name: Deploy Blazor WASM to GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ] # Déclenche le script à chaque push sur la branche 'main'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Récupération du code source
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # 2. Configuration de l'environnement .NET
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x' # Remplacez par votre version de .NET (ex: 8.0.x, 9.0.x)
+
+    # 3. Publication de l'application Blazor en mode Release
+    - name: Publish Blazor Application
+      run: dotnet publish -c Release -o release
+
+    # 4. Ajustements spécifiques pour GitHub Pages (Base HREF, 404, .nojekyll)
+    - name: Fix paths and routing for GitHub Pages
+      run: |
+        # Remplacez "MON-DEPOT" par le nom exact de votre dépôt GitHub (ex: mon-portfolio)
+        REPO_NAME="Portfolio"
+        
+        # Modification automatique du base href dans index.html
+        sed -i 's|<base href="/" />|<base href="/'"$REPO_NAME"'/" />|g' release/wwwroot/index.html
+        
+        # Copie de index.html vers 404.html pour gérer le routage de Blazor
+        cp release/wwwroot/index.html release/wwwroot/404.html
+        
+        # Création du fichier .nojekyll pour que GitHub ne bloque pas le dossier _framework
+        touch release/wwwroot/.nojekyll
+
+    # 5. Déploiement des fichiers sur la branche gh-pages
+    - name: Commit and Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: release/wwwroot # Le dossier contenant les fichiers compilés
+        branch: gh-pages # La branche cible qui hébergera le site statique

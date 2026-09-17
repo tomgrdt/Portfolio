@@ -1,0 +1,290 @@
+﻿@page "/"
+@implements IAsyncDisposable
+
+<PageTitle>Thomas Gourdet — TGDev · AI Loading Lab</PageTitle>
+
+<div class="grid-field">
+
+    <header class="masthead">
+        <div class="masthead-inner">
+            <div class="brand"><b>TGDEV</b> — AI LOADING LAB</div>
+            <nav class="masthead-nav">
+                <a href="#about">À propos</a>
+                <a href="#experience">Expérience</a>
+                <a href="#stack">Stack</a>
+                <a href="#projects">Projets</a>
+                <a href="#certs">Certifications</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrap">
+
+        <section class="hero">
+            <div class="hero-grid">
+                <div>
+                    <p class="eyebrow">Portfolio — expert technique IA &amp; .NET</p>
+                    <h1>20 ans à construire des applications, aujourd'hui des agents IA.</h1>
+                    <p class="lede">Thomas Gourdet — expert technique à forte dominante Microsoft. Suivi de performances, optimisation, gestion Agile, et depuis quelques années une veille active sur l'écosystème IA : LLM, RAG, agents, automatisation, IA locale/offline.</p>
+                    <p class="role">Expert Technique — Développement Azure, IA et C#.NET chez <strong>PwC Consulting</strong> depuis 2025</p>
+                </div>
+                <div class="terminal">
+                    <div class="terminal-bar">
+                        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        <span class="label">agent-stack.log — rendu par Blazor (C#), sans JS</span>
+                    </div>
+                    <div class="terminal-body">
+                        <span class="ok">@displayed</span><span class="cursor"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <p class="eyebrow">À propos</p>
+            <div class="about-grid">
+                <div>
+                    <p><strong>20 ans d'expérience</strong> en développement d'applications et bases de données, à forte dominante Microsoft : suivi de performances, optimisation, gestion Agile.</p>
+                    <p>Depuis 2025, en mission chez PwC Consulting comme expert technique : conception d'agents IA pro-code et d'API en C#.NET, avec le .NET SDK, Azure AI Foundry et OpenAI, jusqu'à l'intégration de LLM dans les outils Office.</p>
+                    <p>Adaptable et toujours en veille sur les technologies émergentes, je cultive un intérêt marqué pour l'écosystème IA au sens large — que je prolonge en dehors des missions à travers des projets personnels documentés sous la marque <strong>TGDev — AI Loading Lab</strong>.</p>
+                </div>
+                <dl>
+                    <div class="fact"><dt>RÔLE ACTUEL</dt><dd>Expert technique — PwC Consulting</dd></div>
+                    <div class="fact"><dt>EXPÉRIENCE</dt><dd>20 ans — dév. d'applications &amp; bases de données</dd></div>
+                    <div class="fact"><dt>DOMINANTE</dt><dd>Écosystème Microsoft</dd></div>
+                    <div class="fact"><dt>FORMATION</dt><dd>DESS IMOI — Université d'Orléans</dd></div>
+                    <div class="fact"><dt>LANGUES</dt><dd>Français (natif) · Anglais (avancé)</dd></div>
+                    <div class="fact"><dt>FOCUS ACTUEL</dt><dd>Agents IA, RAG, automatisation, IA locale</dd></div>
+                </dl>
+            </div>
+        </section>
+
+        <section id="experience">
+            <p class="eyebrow">Expérience</p>
+            <h2 style="font-size:22px; margin-bottom:6px;">Parcours professionnel</h2>
+
+            <div class="exp-item">
+                <div class="exp-years">Depuis 2025</div>
+                <div>
+                    <div class="exp-role">Expert Technique — Développement Azure, IA et C#.NET</div>
+                    <div class="exp-company">PwC Consulting</div>
+                    <ul>
+                        <li>Développeur .NET et Agents IA</li>
+                        <li>Développement d'agents IA pro code et d'APIs en C#.NET</li>
+                        <li>Utilisation du Framework .NET SDK pour intégrer les outils Office à un LLM</li>
+                    </ul>
+                    <div class="exp-tools">C#.NET · REST APIs · Microsoft Azure · Azure Foundry · OpenAI · Visual Studio · GIT</div>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-years">2023 – 2025</div>
+                <div>
+                    <div class="exp-role">Expert Technique — Développement Azure et C#.NET</div>
+                    <div class="exp-company">Pernod Ricard (Consulting)</div>
+                    <ul>
+                        <li>Développeur .NET</li>
+                        <li>Maintenance et développement de 2 applications web marketing sur technologies Microsoft</li>
+                    </ul>
+                    <div class="exp-tools">Microsoft Azure · C#.NET · SQL Server · SSMS · Visual Studio · REST APIs · Postman · GIT</div>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-years">2010 – 2018<br />puis 2022</div>
+                <div>
+                    <div class="exp-role">Responsable Technique d'applications</div>
+                    <div class="exp-company">Terrena</div>
+                    <ul>
+                        <li>Mise en place de projets innovants en C#.NET (département R&amp;D puis Digital Factory)</li>
+                        <li>Responsable niveau 2 sur un projet de synchronisation de données SQL Server (Microsoft Replication)</li>
+                    </ul>
+                    <div class="exp-tools">C#.NET · SQL Server · SSMS · SQL Server Replication · REST APIs · Postman · Entity Framework · Unipaas · Oracle Database · PowerBuilder</div>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-years">2020 – 2021</div>
+                <div>
+                    <div class="exp-role">Expert Technique — Gestionnaire d'applications, coordinateur, formateur C#.NET</div>
+                    <div class="exp-company">Université Catholique de l'Ouest (Consulting)</div>
+                    <ul>
+                        <li>Maintenance et évolution des applications dans un environnement à prédominance Microsoft</li>
+                        <li>Montée en compétences de l'équipe sur l'environnement technique C#.NET</li>
+                        <li>Coordination technique des sujets techniques</li>
+                    </ul>
+                    <div class="exp-tools">Visual Studio · C#.NET · SQL Server · SSMS · REST APIs · PowerBuilder</div>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-years">2019 – 2020</div>
+                <div>
+                    <div class="exp-role">Manager and Product Owner</div>
+                    <div class="exp-company">Adventi Informatique (Groupe TGS)</div>
+                    <ul>
+                        <li>Management d'une équipe de 7 personnes (développeur, architecte, support)</li>
+                        <li>Responsable de l'équipe en charge de l'outil web du cabinet</li>
+                    </ul>
+                    <div class="exp-tools">C#.NET · SQL Server · SSMS · Jira · Méthode Agile · REST APIs · Postman</div>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-years">Antérieur</div>
+                <div>
+                    <div class="exp-role">Analyste-Programmeur VB.NET</div>
+                    <div class="exp-company">Isilog – Isiware</div>
+                    <ul>
+                        <li>Gestionnaire du support niveau 2, analyse et conception de développements logiciels</li>
+                        <li>Responsable niveau 2 du support et de la gestion des incidents</li>
+                    </ul>
+                    <div class="exp-tools">VB.NET · SQL Server · SSMS · Entity Framework · Oracle · Visual Studio</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stack">
+            <p class="eyebrow">Stack technique</p>
+            <h2 style="font-size:22px; margin-bottom:6px;">Du code à l'agent : le pipeline que j'utilise</h2>
+            <p style="color:var(--text-muted); font-size:15px; max-width:60ch; margin-top:10px;">Une base applicative en C#.NET, un raisonnement augmenté par RAG, une orchestration via n8n, et la possibilité de tout faire tourner en local.</p>
+
+            <div class="pipeline">
+                <div class="node">C#.NET<small>.NET SDK</small></div>
+                <div class="connector"></div>
+                <div class="node">Azure Foundry<small>+ OpenAI / Copilot Studio</small></div>
+                <div class="connector"></div>
+                <div class="node">RAG<small>Qdrant</small></div>
+                <div class="connector"></div>
+                <div class="node">n8n<small>orchestration</small></div>
+                <div class="connector"></div>
+                <div class="node">Ollama / LM Studio<small>modèles locaux</small></div>
+            </div>
+
+            <div class="tags">
+                <span class="tag">C# / .NET / .NET SDK</span>
+                <span class="tag">LLM / RAG / Agents</span>
+                <span class="tag">Microsoft Azure</span>
+                <span class="tag">Azure Foundry</span>
+                <span class="tag">Copilot Studio</span>
+                <span class="tag">Azure Logic Apps</span>
+                <span class="tag">SQL Server / SSMS</span>
+                <span class="tag">Entity Framework</span>
+                <span class="tag">Qdrant</span>
+                <span class="tag">Ollama</span>
+                <span class="tag">LM Studio</span>
+                <span class="tag">SDK OpenAI / Anthropic / Gemini</span>
+                <span class="tag">n8n</span>
+                <span class="tag">REST APIs / Postman</span>
+                <span class="tag">Visual Studio / VS Code</span>
+                <span class="tag">GIT</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <p class="eyebrow">Projets personnels</p>
+
+            <div class="project">
+                <div class="project-head">
+                    <h3>De l'actualité au portefeuille</h3>
+                    <span class="status">En développement</span>
+                </div>
+                <p>Une application Blazor Server (.NET 8), construite en monolithe modulaire, qui fait dérouler un pipeline en 7 étapes : de la collecte d'actualités jusqu'à un simulateur de portefeuille d'investissement, en passant par une analyse augmentée par RAG.</p>
+                <div class="meta">Blazor Server · .NET 8 · Monolithe modulaire · Swagger par module · RAG</div>
+            </div>
+
+            <div class="project">
+                <div class="project-head">
+                    <h3>Agents IA on-premise pour PME réglementées</h3>
+                    <span class="status">En développement</span>
+                </div>
+                <p>Un socle technique combinant n8n, C#.NET et Ollama/RAG pour des PME qui ne peuvent pas envoyer leurs données dans le cloud. L'idée : livrer des agents IA qui tournent entièrement sur l'infrastructure du client.</p>
+                <div class="meta">n8n · C#.NET · Ollama · RAG · ~5–10h / semaine</div>
+            </div>
+
+            <div class="project">
+                <div class="project-head">
+                    <h3>TGDev — AI Loading Lab</h3>
+                    <span class="status">Actif</span>
+                </div>
+                <p>Un espace dédié, séparé du profil personnel, où sont documentées des expérimentations : LLMs, RAG, agents, automatisation, IA locale et offline.</p>
+                <div class="meta">Page LinkedIn · Contenu &amp; veille</div>
+            </div>
+        </section>
+
+        <section id="certs">
+            <p class="eyebrow">Certifications &amp; formation</p>
+            <div class="certs">
+                <div class="cert">
+                    <div class="cert-name">Microsoft Certified<span class="sub">Azure AI Fundamentals</span></div>
+                    <div class="cert-code">AI-900</div>
+                </div>
+                <div class="cert">
+                    <div class="cert-name">Microsoft Certified<span class="sub">Azure AI Engineer Associate</span></div>
+                    <div class="cert-code">AI-102</div>
+                </div>
+            </div>
+            <div class="extra-row">
+                <div><dt>FORMATION</dt><dd>DESS IMOI — Université d'Orléans</dd></div>
+                <div><dt>LANGUES</dt><dd>Français (natif) · Anglais (avancé)</dd></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p class="eyebrow">Contact</p>
+            <h2 style="font-size:24px; max-width:20ch;">Discutons agents IA, RAG ou automatisation.</h2>
+            <div class="contact-row">
+                <a class="btn primary" href="https://www.linkedin.com/in/thomas-gourdet-76b5a7152/">Page LinkedIn — TGDev AI Loading Lab</a>
+                <a class="btn" href="mailto:thomas.gourdet@gmail.com">Écrire un email</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="wrap">
+        <span>TGDEV — AI LOADING LAB</span>
+        <span>REV. 2026.09 · Blazor WebAssembly</span>
+    </footer>
+
+</div>
+
+@code {
+    // Le boot log du hero est animé côté C# (PeriodicTimer + StateHasChanged),
+    // pas en JavaScript : c'est le même pipeline C#.NET que celui décrit sur la page.
+    private static readonly string[] Lines =
+    {
+        "> initialisation des modules...",
+        "> chargement C#.NET / .NET SDK ......... OK",
+        "> connexion Azure Foundry / OpenAI ...... OK",
+        "> orchestration n8n ...................... OK",
+        "> moteur RAG + modèles locaux (Ollama) ... OK",
+        "> agent prêt."
+    };
+
+    private string displayed = "";
+    private PeriodicTimer? timer;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var full = string.Join("\n", Lines);
+        timer = new PeriodicTimer(TimeSpan.FromMilliseconds(14));
+        var i = 0;
+
+        while (i <= full.Length && await timer.WaitForNextTickAsync())
+        {
+            displayed = full[..i];
+            i += 2;
+            StateHasChanged();
+        }
+
+        displayed = full;
+        StateHasChanged();
+    }
+
+    public ValueTask DisposeAsync()
+    {
+        timer?.Dispose();
+        return ValueTask.CompletedTask;
+    }
+}
