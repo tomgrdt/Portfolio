@@ -2,7 +2,7 @@ name: Deploy Blazor WASM to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ] # Déclenche le script à chaque push sur la branche 'main'
+    branches: [ "master" ] # Déclenche le script à chaque push sur la branche 'master'
 
 jobs:
   deploy:
