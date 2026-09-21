@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TGDev.Portfolio",
   "resources": {
-    "hash": "sha256-Tyfdm21loaHAMNZsxLkeHgalPqt6AWRfz47DXt5OeFs=",
+    "hash": "sha256-ov4xgw6rUVYwMSFNZt8DnoQ+IP7h11y+oKAFinYjHSc=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-dexsp+9ih2C28zVhNnPXUbkz2QCq7lHpkyDcmaLl7NQ="
     },
@@ -45,7 +45,7 @@
       "System.Text.Json.wasm": "sha256-hd0swmXYVCqMFtCPU3a770M5/M1AyBUtiKV15BnbUKc=",
       "System.Text.RegularExpressions.wasm": "sha256-79rD56wmpNJvLcJQhHY1Cy5nfIFTEEwYf0QjBbSgNNE=",
       "System.Private.CoreLib.wasm": "sha256-iS9dZ4Q272yBsttAlFmisOdzACOL5No1CwqSLDVuAb4=",
-      "TGDev.Portfolio.wasm": "sha256-/xQaVff9Jv904bBC52mV47nUxSiNDsCQEP7JS7mv3Qs="
+      "TGDev.Portfolio.wasm": "sha256-GYRx+ARBdOO0DQcYN1QsSxQ5Ts1YTnvoYUJP68MY+Hs="
     }
   },
   "cacheBootResources": true,
