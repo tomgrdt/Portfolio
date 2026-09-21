@@ -1,6 +1,6 @@
-﻿# TGDev.Portfolio — Blazor WebAssembly
+# TGDev.Portfolio; — Blazor WebAssembly
 
-Portfolio de Thomas Gourdet, en Blazor WebAssembly (.NET 8, standalone). Animation du terminal du hero est pilotée en C# (`PeriodicTimer` + `StateHasChanged`).
+Portfolio de Thomas Gourdet, en Blazor WebAssembly (.NET 8, standalone). Même contenu et même thème "blueprint" que la version HTML, mais ici l'animation du terminal du hero est pilotée en C# (`PeriodicTimer` + `StateHasChanged`) plutôt qu'en JavaScript.
 
 ## Prérequis
 
@@ -57,5 +57,3 @@ Pages/Portfolio.razor   ← contenu du portfolio
 wwwroot/index.html
 wwwroot/css/portfolio.css
 ```
-
-Automatisation faite
