@@ -1,3 +1,5 @@
+@using Blazor.Analytics.Components
+
 <Router AppAssembly="@typeof(App).Assembly">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(Layout.MainLayout)" />
@@ -9,3 +11,5 @@
         </LayoutView>
     </NotFound>
 </Router>
+
+<NavigationTracker />
